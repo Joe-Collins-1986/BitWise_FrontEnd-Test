@@ -4,6 +4,7 @@ import LoginPage from "../pages/LoginPage";
 
 import Layout from "../pages/Layout";
 import ErrorPage from "../pages/ErrorPage";
+import SignUpPage from "../pages/SignUpPage";
 
 const router = createBrowserRouter([
 
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
         children: [
             {path: '', element: <HomePage /> },
             {path: 'login/', element: <LoginPage /> },
+            {path: 'signup/', element: <SignUpPage /> },
         ]
     }
 ])

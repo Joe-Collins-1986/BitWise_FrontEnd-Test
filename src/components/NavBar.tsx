@@ -19,6 +19,9 @@ const NavBar = () => {
           <Box px={4}>
             <NavLink to="/login/" >Login</NavLink>
           </Box>
+          <Box px={4}>
+            <NavLink to="/signup/" >Sign Up</NavLink>
+          </Box>
           </Show>
           <ColorModeSwitch />
           <Show below='lg'>
