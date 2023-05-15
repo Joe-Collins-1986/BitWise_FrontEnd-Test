@@ -5,12 +5,9 @@ function LoginPage() {
 
   return (
     <Grid templateAreas={{
-      base: `"nav" "main"`,
-      lg: `"nav nav" "aside main"`
+      base: `"main"`,
+      lg: `"aside main"`
     }}>
-      <GridItem area='nav'>
-        <NavBar />
-      </GridItem>
       <Show above='lg'>
         <GridItem area='aside'>Login Profile Menu</GridItem>
       </Show>
