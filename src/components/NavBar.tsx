@@ -1,4 +1,4 @@
-import { HStack, Image, Show, Text, } from '@chakra-ui/react'
+import { HStack, Image, Link, Show, Text, } from '@chakra-ui/react'
 import logo from '../assets/logoPlaceholder.jpeg'
 import ColorModeSwitch from './ColorModeSwitch'
 import HamburgerMenu from './HamburgerMenu'
@@ -9,9 +9,9 @@ const NavBar = () => {
         <Image src={logo} boxSize='50px' m='5px' />
         <HStack>
           <Show above='lg'>
-            <Text px='20px'>Page 1</Text>
-            <Text px='20px'>Page 2</Text>
-            <Text px='20px'>Page 3</Text>
+            <Link px='20px'>Page 1</Link>
+            <Link px='20px'>Page 2</Link>
+            <Link px='20px'>Page 3</Link>
           </Show>
           <ColorModeSwitch />
           <Show below='lg'>

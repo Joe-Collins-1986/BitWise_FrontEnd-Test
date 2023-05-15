@@ -1,7 +1,7 @@
 import { Grid, GridItem, Show } from '@chakra-ui/react'
-import NavBar from './components/NavBar'
+import NavBar from '../components/NavBar'
 
-function App() {
+function LoginPage() {
 
   return (
     <Grid templateAreas={{
@@ -12,12 +12,12 @@ function App() {
         <NavBar />
       </GridItem>
       <Show above='lg'>
-        <GridItem area='aside'>Profile Menu</GridItem>
+        <GridItem area='aside'>Login Profile Menu</GridItem>
       </Show>
-      <GridItem area='main'>Main</GridItem>
+      <GridItem area='main'>Login Main</GridItem>
     </Grid>
 
   )
 }
 
-export default App
+export default LoginPage

@@ -1,4 +1,4 @@
-import { Button, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react'
+import { Button, Link, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
 
@@ -7,7 +7,6 @@ import { AiOutlineClose } from 'react-icons/ai'
 const HamburgerMenu = () => {
     
   return (
-    
     <Menu>
         {({ isOpen }) => (
             <>
@@ -20,8 +19,10 @@ const HamburgerMenu = () => {
                 {isOpen ? <AiOutlineClose /> : <GiHamburgerMenu />}
             </MenuButton>
             <MenuList w="100vw" mt='2'>
-                <MenuItem>Page 1</MenuItem>
-                <MenuItem>Page 2</MenuItem>
+                UPDATE TO NAVLINK ONCE REACT-ROUTER-DOM IS INSTALLED
+                <Link><MenuItem>Page 1</MenuItem></Link>
+                <Link><MenuItem>Page 2</MenuItem></Link>
+                <Link><MenuItem>Page 3</MenuItem></Link>
             </MenuList>
             </>
         )}
