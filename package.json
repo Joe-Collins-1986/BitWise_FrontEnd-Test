@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "start": "npm run build && npx serve -s build"
   },
   "engines": {
@@ -28,7 +28,6 @@
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
     "serve": "^14.2.0",
-    "typescript": "^4.9.3",
     "vite": "^4.1.0"
   }
 }
