@@ -89,7 +89,7 @@ const SignUpPage = () => {
                 <FormLabel>Username</FormLabel>
                 <Input 
                   type="text"
-                  name='username'
+                  name="username"
                   value={username}
                   onChange={handleChange} />
               </FormControl>
@@ -105,7 +105,7 @@ const SignUpPage = () => {
                 <FormLabel>Password</FormLabel>
                 <Input 
                   type="password"
-                  name='password1'
+                  name="password1"
                   value={password1}
                   onChange={handleChange} />
               </FormControl>
@@ -121,7 +121,7 @@ const SignUpPage = () => {
                 <FormLabel>Confirm Password</FormLabel>
                 <Input 
                   type="password"
-                  name='password2'
+                  name="password2"
                   value={password2}
                   onChange={handleChange} />
               </FormControl>
@@ -142,6 +142,13 @@ const SignUpPage = () => {
                 }}>
                 Sign Up
               </Button>
+
+              { errors.non_field_errors?.map((message, idx) => 
+                  <Alert key={idx} status='warning'>
+                    <AlertIcon />
+                    {message}
+                  </Alert>
+              )}
 
             </Stack>
           </form>
