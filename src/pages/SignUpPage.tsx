@@ -30,13 +30,14 @@ const SignUpPage = () => {
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSignUpData ({
       ...signUpData,
-      [event.target.name]: event.target.value,
+      [event.target.name]: event.target.value
     })
   }
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    axios.post("/dj-rest-auth/registration/", signUpData)
+    axios
+      .post("dj-rest-auth/registration/", signUpData)
       .then((response) => {
         // Handle the successful response
         console.log(response.data);
@@ -141,13 +142,6 @@ const SignUpPage = () => {
                 }}>
                 Sign Up
               </Button>
-
-              { errors.non_field_errors?.map((message, idx) => 
-                  <Alert key={idx} status='warning'>
-                    <AlertIcon />
-                    {message}
-                  </Alert>
-              )}
 
             </Stack>
           </form>
